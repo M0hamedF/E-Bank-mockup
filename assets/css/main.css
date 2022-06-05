@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-hover: hsl(224, 23%, 55%);
+    --clr-header: hsl(223, 47%, 23%);
+    --clr-lte: hsl(0, 0%, 100%);
+    --clr-bg: hsl(230, 37%, 97%);
+    --clr-mix-theme: linear-gradient(to top left, hsl(223, 47%, 23%, 0.4) 0%, hsl(224, 23%, 55%, 0.4) 100%);
+    --clr-body: rgb(214, 199, 199);
+    --fs-button: 1em;
+    --transition: 0.3s;
+
+
+    --fs-header: 1.2em;
+    --fs-sec: 0.9em;
+    --clr-bg-footer: hsl(220, 6%, 20%);
+}
+
+/* ////////////// */
+.btn {
+    margin-top: 30px;
+    padding: 15px 45px;
+    font-size: var(--fs-button);
+    min-width: 120px;
+    background-color: white;
+    border-radius: 7px;
+    border-width: 0;
+    color: var(--clr-header);
+    font-weight: 900;
+    transition: var(--transition);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-med {
+    margin-top: 30px;
+    padding: 7px 0;
+    font-size: 0.9em;
+    min-width: 120px;
+    background-color: var(--clr-lte);
+    border-radius: 7px;
+    border-width: 0;
+    color: var(--clr-hover);
+    font-weight: 900;
+    transition: var(--transition);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover,
+.btn-med:hover {
+    background-color: var(--clr-header);
+    color: var(--clr-lte);
+    border-color: var(--clr-hover);
+    border-width: 0;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: 200;
+    color: var(--clr-header);
+}
+
+.light-header {
+    font-size: 2.5em;
+    font-weight: 200;
+    color: var(--clr-lte);
+}
+.new_card:hover{
+    background-color: gray;
+    color: var(--clr-lte);
+    border-color: var(--clr-hover);
+    border-width: 0;
+    cursor: pointer;
+}
