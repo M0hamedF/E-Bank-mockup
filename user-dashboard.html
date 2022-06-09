@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="gaming-shop-ecommerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <script src="https://kit.fontawesome.com/e7650c5612.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/user_profile.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#nav").load("nav.html");
+            $("#sidebar").load("sidebar.html");
+        });
+    </script>
+    <title>Maze: Dashboard</title>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="greating">
+                <h3>Welcome, Mr Mohamed</h3>
+                <p>ID Number: 7812459</p>
+            </div>
+            <div class="dashboard_flex">
+                <div class="balance" id="dashboard">
+                    <h3>Balance</h3>
+                    <h1>2400.00 EGP</h1>
+                    <p class="active_account">Active</p>
+                </div>
+
+                <div class="cards">
+                    <h2>Available Cards (3)</h2>
+                    <table class="transaction">
+                        <tr>
+                            <th>Card</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>XXXX-XXXX-XXXX-5764</td>
+                            <td>Credit</td>
+                            <td class="active_account">Active</td>
+                        </tr>
+                        <tr>
+                            <td>XXXX-XXXX-XXXX-2324</td>
+                            <td>Depit</td>
+                            <td class="active_account">Active</td>
+                        </tr>
+                        <tr>
+                            <td>XXXX-XXXX-XXXX-6324</td>
+                            <td>Pre-paid</td>
+                            <td class="expired_account">Expired</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="sidebar"></div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</body>
+
+</html>
