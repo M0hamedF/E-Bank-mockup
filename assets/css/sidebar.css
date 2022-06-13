@@ -1,0 +1,112 @@
+@import url(main.css);
+
+body {
+    background: #f5f6fa;
+}
+
+/* SideBar */
+.sidebar {
+    background: hsl(223, 47%, 23%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+/* Profile */
+.sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar .profile img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.sidebar .profile h3 {
+    color: rgb(255, 255, 255);
+    margin: 10px 0 5px;
+}
+
+.sidebar .profile p {
+    color: hsl(230, 37%, 97%);
+    font-size: 0.8em;
+}
+
+/* Items */
+.sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid hsl(224, 23%, 55%);
+    color: rgb(241, 237, 237);
+    font-size: 0.9em;
+    position: relative;
+}
+
+.sidebar ul li a .icon {
+    color: hsl(230, 37%, 97%);
+    width: 30px;
+    display: inline-block;
+}
+
+/*  */
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    color: hsl(223, 47%, 23%);
+    background: white;
+    border-right: 2px solid hsl(223, 47%, 23%);
+}
+
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon {
+    color: hsl(223, 47%, 23%);
+}
+
+/* .sidebar ul li a:hover:before,
+.sidebar ul li a.active:before {
+    display: block;
+} */
+
+/* NavBar */
+.wrapper {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    background: hsl(223, 47%, 23%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar .hamburger a {
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.navbar .hamburger a:hover {
+    color: hsl(224, 23%, 55%);
+}
+
+/* On Activation */
+body.active .sidebar {
+    left: -200px;
+
+}
+
+body.active .wrapper {
+    margin-left: 0;
+    width: 100%;
+}
